@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+       <center> <h1><u>JS ASSESSMENT</u></h1></center>
+       <div>
+         Number1
+        <input type="number" id="num1" value="">
+    </div><br>
+
+    <div class="row">
+        Number2
+        <input type="number" id="num2" value="">
+    </div><br>
+
+    <div class="row">
+        <button onclick="calculateSum()">Add(+)</button>
+        <button onclick="calculateSub()">sub(-)</button>
+        <button onclick="calculateproduct()">product(*)</button>
+        <button onclick="calculatedivision()">division(/)</button>
+        Answer
+        <input type="text" id="answer" readonly>
+    </div>
+
+    <script>
+        function calculateSum() {
+            let number1 = Number(document.getElementById("num1").value);
+            let number2 = Number(document.getElementById("num2").value);
+
+            let sum = number1 + number2;
+
+            document.getElementById("answer").value = sum;
+        }
+         function calculateSub() {
+            let number1 = Number(document.getElementById("num1").value);
+            let number2 = Number(document.getElementById("num2").value);
+
+            let sub = number1 - number2;
+
+            document.getElementById("answer").value = sub;
+        }
+         function calculateproduct() {
+            let number1 = Number(document.getElementById("num1").value);
+            let number2 = Number(document.getElementById("num2").value);
+
+            let product = number1 * number2;
+
+            document.getElementById("answer").value = product;
+        }
+        function calculatedivision() {
+            let number1 = Number(document.getElementById("num1").value);
+            let number2 = Number(document.getElementById("num2").value);
+
+            let division = number1 / number2;
+
+            document.getElementById("answer").value = division;
+        }
+    </script>
+</fieldset>
+</body>
+</html>
